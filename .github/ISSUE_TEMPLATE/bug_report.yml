@@ -1,0 +1,55 @@
+name: Bug Report
+description: File a bug report
+title: "[Bug]: "
+labels: ["bug"]
+assignees:
+  - LeeXDA21
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking your time to help squash the bugs.
+  - type: textarea
+    id: tele-user
+    attributes:
+      label: What is your Telegram Username?
+      placeholder: LeeXDA18 (Make sure to include the @, as if you were mentioning yourself)
+  - type: textarea
+    id: user-device
+    attributes:
+      label: What is your device?
+      placeholder: SM-G998B (S21 Ultra) -- Format to follow
+    validations:
+      required: true
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Bug Description
+      description: Describe the bug and how to reproduce it in as much detail as possible.
+    validations:
+      required: true
+  - type: textarea
+    id: bug-desc-cont
+    attributes:
+      label: Bug Visual Description
+      description: Please upload some screenshots/video of the bug you are reporting onto your Google Drive, and provide the link. **MUST BE A G-DRIVE LINK**
+    validations:
+      required: true
+  - type: textarea
+    id: bug-logfile
+    attributes:
+      label: Log File(s)
+      description: Please use the LoggingKit provided from the UnboundHub, and upload the log from "log-all" to your google drive, and provide the link. **MUST BE A G-DRIVE LINK**
+    validations:
+      required: true
+  - type: checkboxes
+    id: is-rom-bug
+    attributes:
+      label: Additional checks
+      options:
+      - label: I have checked other bug reports and this is not a duplicate.
+        required: true
+      - label: This is a bug in this version of the app and NOT any other variant.
+        required: true
+      - label: You understand and declare that if any information provided here is incorrect or instructions have not been followed correctly that it can lead to you being permanently banned from all Unbound owned servers.
+        required: true
